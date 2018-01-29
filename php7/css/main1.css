@@ -1,0 +1,87 @@
+body {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif
+	font-size:13px;
+	line-height:1.6em;
+	color: #727272;  
+	background: #f5f5f5;
+	
+}
+div.header{
+	text-align:center;
+	height:300px;
+	width:100%;
+	
+}
+.logo{
+	text-align: center;
+	
+	
+}
+
+nav{
+	display: inline-block;
+}
+
+nav li {
+	margin: -30px 0px;
+	color: #333;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0px;
+    display: block;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+	display:inline-block;
+	padding: 26px 17px 24px 17px;
+	width: 300px;
+	text-align:center;
+	
+	
+}
+nav li:hover{
+	background-color: #ff8533;
+	color: white;
+	
+}
+
+
+#subheader {
+	color: white;
+	
+    background: url("blur8.jpg") bottom no-repeat fixed;
+    padding: 30px 0 30px 0;
+    
+	margin-top: 35px;
+	height: 70px;
+	border-radius: 10px;
+}
+#subheader h1 {
+    border: none;
+    margin-bottom: 0px;
+	font-size:35px;
+}
+#subheader h1 {
+    letter-spacing: -2px;
+    float: left;
+    border-right: solid 1px #555;
+    padding-right: 40px;
+	padding-left: 20px;
+    margin-right: 40px;
+	margin-left: 10px;
+
+}
+h1, h2 {
+    font-weight: lighter;
+	font-family: inherit;
+   
+}
+#subheader span {
+	margin-top: 5px;
+	
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 25px;
+	
+}
+
+
