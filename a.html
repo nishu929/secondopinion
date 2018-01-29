@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Second Opinion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<!--style-->
+		<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+			<!--JS
+		<script type="text/javascript" src="JS/java.js"></script>  -->
+<style>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit] {
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    height: 60%
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 1% auto 15% auto; /* % from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+
+<style>
+#header
+{
+	
+	width:100%;
+	height:150px;
+	overflow: hidden;
+}
+body{
+	margin:0;
+	padding:0;
+	
+}
+
+
+#centre
+{
+	/*background:url(../a.jpg) repeat-x #060606;*/
+	width:100%;
+	float:left;
+	 overflow: hidden;
+	 border-style:solid;
+	 border-width: 0px 1px ;
+	background-color:white;
+}
+#left
+{
+	float:left;
+/*	background:url(../b.jpg) repeat-x #060606;*/
+	width:8%;
+	overflow: hidden;
+	height:1000px;
+}
+#right
+{
+	
+	float:right;
+/*	background:url(../b.jpg) repeat-x #060606; */
+	width:8%;
+	clear: right;
+	overflow: hidden;
+	height:1000px;
+	
+}
+
+#footers
+{
+	width:100%;
+	height:150px;
+	overflow:hidden;
+}
+
+/* LIST */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	border-style:solid;
+	border-width:2px;
+}
+
+li {
+    float: left;
+	
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+	
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+	
+	}
+
+#head1 {
+    font-size: 2.56rem;
+    line-height: 110%;
+    margin: 1.78rem 0 1.424rem 0;
+}
+
+#head2{
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.14rem 0 0.912rem 0;
+}
+.mySlides {display:none;}
+#d1{
+font-family: "Times New Roman", Times, serif;
+font-size: 30px;
+color:#000000;
+}
+#dd1{
+  border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 96%;
+}
+
+ #ff1,#ff2,#ff3,#ff4,#ff5
+ {  width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+#fs{
+    width: 40%;
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+</style>
+<script>
+function validation1()
+{
+	var a = document.f1.au.value;
+	var b = document.f1.ap.value;
+	if(a == "")
+	{
+		alert('Please enter username');
+		document.f1.au.focus();
+		
+		return false;
+	}
+	if(b == "")
+	{
+		alert('Please enter password');
+		document.f1.ap.focus();
+		
+		return false;
+	}
+	
+	if(a != "user")
+	{
+		alert('Username is incorrect');
+		document.f1.au.focus();
+		return false;
+	}
+	if(b != "1234")
+	{
+		alert('password is incorrect');
+		document.f1.ap.focus();
+		return false;
+	}
+	
+
+}
+function validation2()
+{
+var c = document.f2.su.value;
+var d = document.f2.sp.value;
+if(c == "")
+	{
+		alert('Please enter username');
+		document.f2.su.focus();
+		
+		return false;
+	}
+	if(d == "")
+	{
+		alert('Please enter password');
+		document.f2.sp.focus();
+		
+		return false;
+	}
+var e = /^1[3-6]{1}[A-Z]{3}[0-9]{4}$/;
+	if(!c.match(e))
+	{
+		alert('Enter your registration no as username');
+		document.f2.su.focus();
+		return false;
+	}
+}
+</script>
+</head>
+<body background-color="000000">
+<div id="header" style="background-color:white;">		
+	<center><h1 id="head1"><font color="black">ONLINE CONSULTANCY</font></h1></center>
+	</div>	
+				<ul>   
+				  <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">ADMINISTRATOR LOGIN</button></li>
+				  <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">DOCTOR LOGIN</button></li>
+          <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">PATIENT LOGIN</button></li>
+          <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">BLOGS</button></li>
+          <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">ABOUT US</button></li>
+          <li><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">CONTACT US</button></li>
+          </ul>
+				</div>
+				
+		</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" name="f1" method="post" action="alogin.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" name="au" id="aun" placeholder="Enter Username" autofocus>
+
+      <label><b>Password</b></label>
+      <input type="password" id="apw" name="ap" placeholder="Enter Password" autofocus>
+      <input type="submit" onmouseover="validation1()" value="Login" onsubmit="go()">
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal">
+  
+  <form method="post" class="modal-content animate" name="f2" action="second.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" name="su" placeholder="Enter Username" autofocus>
+
+      <label><b>Password</b></label>
+      <input type="password" name="sp" placeholder="Enter Password" autofocus>
+        
+     <input type="submit" onmouseover="validation2()" value="Login">
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<div class="w3-content w3-section" style="max-width:1450px;background-color:white;">
+  <img class="mySlides" src="m1.jpg"  width="100%" height="450">
+  <img class="mySlides" src="m2.jpg"  width="100%" height="450">
+  <img class="mySlides" src="m3.jpg"  width="100%" height="450">
+  <img class="mySlides" src="m4.jpg"  width="100%" height="450">
+  <img class="mySlides" src="m5.jpg"  width="100%" height="450">
+  <img class="mySlides" src="m6.jpg"  width="100%" height="450">
+  <img class="mySlides" src="m7.jpg"  width="100%" height="450">
+  <img class="mySlides" src="m8.jpg"  width="100%" height="450">
+  <img class="mySlides" src="m9.jpg"  width="100%" height="450">
+  <img class="mySlides" src="m10.jpg"  width="100%" height="450">
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</br>
+</br>
+<div id="dd1">
+  <form action="submit.php">
+    <fieldset> 
+      <legend>YOUR FEEDBACK</legend>
+    <label for="ff1">First Name</label></br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."></br>
+
+    <label for="ff2">Last Name</label></br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."></br>
+
+    <label for="ff3">Email Address</label></br>
+    <input type="text" id="email" name="email" placeholder="Your email address.."></br>
+
+    <label for="ff4">Phone Number</label></br>
+    <input type="text" id="phonenumber" name="phonenumber" placeholder="Your phone number.."></br>
+
+    <label for="ff5">Feedback</label></br>
+    <input type="text" id="feedback" name="feedback"></br>
+    
+  
+    <input type="submit" id="fs" value="Submit"></br>
+  </fieldset>
+  </form>
+</div>
+
+
+</div>
+
+
+	</body>
+</html>
+
+
