@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+H1{
+text-align:center;
+font-size:80px
+}
+H2{
+text-align:center;
+font-size:60px
+}
+body {
+    width:100%;
+    height:100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	border-style:solid;
+	border-width:2px;
+}
+
+li {
+    float: left;
+	
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+	
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+	
+	}
+}
+</style>
+</head>
+<body>
+<p>
+<div width="150%">
+<ul>
+  <li><a href="a1.php" target="f1">HOME</a></li>
+  <li><a href="a2.php" target="f1">NEW REGISTRATIONS</a></li>
+  <li><a href="a3.php" target="f1">PATIENT DETAILS</a></li>
+  <li><a href="a4.php" target="f1">DOCTOR'S DETAILS</a></li>
+  <li><a href="a5.php" target="f1">COMPLAINTS</a></li>
+</ul>
+</div>
+</p>
+<div>
+<iframe src="a1.php" name="f1" height="1000px" width="100%"></iframe>
+</body>
+</html>
+
