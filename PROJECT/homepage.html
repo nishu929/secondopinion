@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+   <style>
+   #blogs:hover{
+    color:black;
+   }
+   </style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <title>homepage-second opinion</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="js/template-scripts.js"></script> 
+      <!-- Adding bootstrap files -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Adding self created CSS file -->
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </script>
+                 
+      <!--[if lt IE 9]>
+	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+   </head>
+   <body class="size-1140">
+      <!-- TOP NAV WITH LOGO -->
+      <header>
+         <nav>
+            <div class="line">
+               <div class="s-12 l-2">
+                  <p class="logo"><strong>SECOND</strong>OPINION</p>
+               </div>
+               <div class="top-nav s-12 l-10">
+                  <p class="nav-text">Custom menu text</p>
+                  <ul class="right">
+                     <li class="active-item"><a href="#carousel">Home</a></li>
+                     <li><a href="#about-us">About Us</a></li>
+                     <li><a href="" data-toggle="modal" data-target="#myModal">LOGIN-DOCTORS</a></li>
+                     <li><a href="" data-toggle="modal" data-target="#myModal1">LOGIN-PATIENTS</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header> 
+      <!-- Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog" style="left:0px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" style="color:#000;background-color:#80ff80">LOGIN</h4>
+          </div>
+          <div class="modal-body">
+            <p>Don't have an account? <a href="../dsignup.php" class="decor_anchor">Register</a></p>
+            <form role="form" action="../php/dlogin.php" method="POST">
+              <div class="form-group">
+                <input type="mail" class="form-control"  placeholder="Email" name="e-mail">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" name="password">
+              </div>
+                <button type="submit" name="submit" class="btn btn-primary">Login</button>
+            </form><br/>
+            <a href="" style="color:#0000ff">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of myModal -->
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog" style="left:0px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" style="color:#000;background-color:#80ff80">LOGIN</h4>
+          </div>
+          <div class="modal-body">
+            <p>Don't have an account? <a href="../psignup.html" class="decor_anchor">Register</a></p>
+            <form role="form" action="../php/plogin.php" method="POST">
+              <div class="form-group">
+                <input type="email" class="form-control"  placeholder="mail" name="mail">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" name="password">
+              </div>
+                <button type="submit" name="submit" class="btn btn-primary">Login</button>
+            </form><br/>
+            <a href="" style="color:#0000ff">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of myModal -->
+           <section>
+         <!-- CAROUSEL --> 
+         <div id="carousel">
+            <div id="owl-demo" class="owl-carousel owl-theme"> 
+               <div class="item">
+                  <img src="imgs/interact1.jpg" alt="" style="width:100%;">
+                  <div class="line"> 
+                     <div class="text hide-s">
+                        <div class="line"> 
+                          <div class="prev-arrow hide-s hide-m">
+                             <i class="icon-chevron_left"></i>
+                          </div>
+                          <div class="next-arrow hide-s hide-m">
+                             <i class="icon-chevron_right"></i>
+                          </div>
+                        </div> 
+                        <h2>Solving the unsolvable in healthcare</h2>
+                        <p>We identify and solve the most complex, critical and costly problems in health care by combining data analytics and top clinical talent with our highly personal methodology.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="imgs/interact2.jpg" alt="">
+                  <div class="line">
+                     <div class="text hide-s"> 
+                        <div class="line"> 
+                          <div class="prev-arrow hide-s hide-m">
+                             <i class="icon-chevron_left"></i>
+                          </div>
+                          <div class="next-arrow hide-s hide-m">
+                             <i class="icon-chevron_right"></i>
+                          </div>
+                        </div> 
+                        <h2>24/7 SERVICE</h2>
+                        <p></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="imgs/interact3.jpg" alt="">
+                  <div class="line">
+                     <div class="text hide-s">
+                        <div class="line"> 
+                          <div class="prev-arrow hide-s hide-m">
+                             <i class="icon-chevron_left"></i>
+                          </div>
+                          <div class="next-arrow hide-s hide-m">
+                             <i class="icon-chevron_right"></i>
+                          </div>
+                        </div> 
+                        <h2>Private and Secure</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- FEATURES -->
+         <div id="features">
+            <div class="line">
+               <div class="margin">
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                     <i class="icon-tablet icon3x"></i>
+                     <h2>Fast reply</h2>
+                     <p>Once the doctors receive the mails,you will get response in minimum possible time.</p>
+                  </div>
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                     <i class="icon-isight icon3x"></i>
+                     <h2>Multiple <a href="">Specialities</a></h2>
+                     <p> There are more than 19 fields where you can consult the experts.</p>
+                  </div>
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                     <i class="icon-star icon3x"></i>
+                     <h2>Quality and Trust</h2>
+                     <p>We promise to give you the best range of doctors available so that you can have speedy recovery.</p>
+                  </div>
+                  <div class="s-12 m-6 l-3 margin-bottom">
+                     <i class="icon-heart icon3x"></i>
+                     <h2>Minimal Charges</h2>
+                     <p>The services cost only a minima amount.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ABOUT US -->
+         <div id="about-us">
+            <div class="s-12 m-12 l-6 media-container">
+               <img src="imgs/girl1.jpg" alt="" style="height:500px;width:200px;">
+            </div>
+            <article class="s-12 m-12 l-6">
+               <h3>IF I HADN’T COME TO KNOW ABOUT SECOND OPINION,<br/>I COULD STILL BE WAITING FOR A DIAGNOSIS RIGHT NOW.”</h3>
+               <p style="font-size:20px;">After seeing almost a dozen different doctors, Zara was frustrated by her increasing pain levels, lack of mobility and the absence of any clear answers regarding her condition, so she contacted Second Opinion,about which she came to know from her distant relative.
+               </p><br/><br>
+               <h3><span style="color:#ffffff;"><a href="aboutus.html#stories">Read more about us</a></h3>
+            </article>
+         </div>
+         <br/>
+         <br/>
+         <!-- OUR WORK -->
+         <div class="container-fluid">
+            <div class="empty-space marg-lg-b60 marg-sm-b50 marg-xs-b30"></div>
+
+            <!-- TT-TITLE -->
+            <div class="tt-title">
+                <!--<div class="tt-title-cat">Pricing tables</div>-->
+                <h2 class="section-title">What we treat</h2>
+            </div>
+            <div class="empty-space marg-lg-b50 marg-sm-b30"></div>
+            <div class="row speciality-img-margin">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="tt-partner">
+                                <img class="img-responsive" src="imgs/geenral_medicine.png" height="48" width="48" alt="Cardialogy">
+                            </div>
+                            <div class="tt-partner">General Medicine</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="tt-partner">
+                                <img class="img-responsive" src="imgs/gynecology.jpg" height="48" width="48" alt="Gastroenterology">
+                            </div>
+                            <div class="tt-partner">Gynaecology</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="tt-partner">
+                                <img class="img-responsive" src="imgs/diet.png" height="48" width="48" alt="Urology">
+                            </div>
+                            <div class="tt-partner">Diet Management</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="tt-partner">
+                                <img class="img-responsive" src="imgs/psychiatry.jpg" height="48" width="48" alt="Kidney">
+                            </div>
+                            <div class="tt-partner">Psychiatry</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="tt-partner">
+                                <img class="img-responsive" src="imgs/neurology.jpg" height="48" width="48" alt="Oncology">
+                            </div>
+                            <div class="tt-partner">Neurology</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="tt-partner">
+                                <img class="img-responsive" src="imgs/paediatrics.jpg" height="48" width="48" alt="Common Cold">
+                            </div>
+                            <div class="tt-partner">Paediatrics</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="tt-partner">
+                                <img class="img-responsive" src="imgs/orthopedics.png" height="48" width="48" alt="Gynecology">
+                            </div>
+                            <div class="tt-partner">Orthopedics</div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="tt-partner">
+                                <img class="img-responsive" src="imgs/endocrinology.png" height="48" width="48" alt="Orthopedics">
+                            </div>
+                            <div class="tt-partner">Endocrinology</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+            <br />
+            <br/>       
+         <!-- SERVICES -->
+         <div id="services">
+            <div class="line">
+               <h2 class="section-title">How It Works</h2>
+               <div class="margin">
+                  <div class="s-12 m-6 l-4 margin-bottom">
+                     <i class="fa fa-clock-o" style="font-size:24px"></i>
+                     <div class="service-text">
+                        <h2>STEP 1</h3>
+                        <p style="font-size:15px">We collect all your records, X-rays, scans, test results and pathology samples. You don’t travel, visit doctors’ offices or hunt down files</p>
+                     </div>
+                  </div>
+                  <div class="s-12 m-6 l-4 margin-bottom">
+                     <i class="icon-eye"></i>
+                     <div class="service-text">
+                        <h2>STEP 2</h2>
+                        <p style="font-size:15px">Files are reviewed. Images are re-read. Sample reports are tested all over again.</p>
+                     </div>
+                  </div>
+                  <div class="s-12 m-12 l-4 margin-bottom">
+                     <i class="glyphicon glyphicon-certificate"></i>
+                     <div class="service-text">
+                        <h2>STEP 3</h2>
+                        <p style="font-size:15px">Our expert provides you with a comprehensive, confidential report, including diagnostic and treatment recommendations.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- LATEST NEWS -->
+         <br>
+         <div id="blogs">
+            <div class="line">
+              <h2 class="section-title">BLOGS</h2> 
+              <div class="margin">
+                <div class="s-12 m-6 l-6">
+                  <div class="s-12 l-2">
+                    <div class="news-date">
+                      <p class="day">28</p><p class="month">AUGUST</p><p class="year">2015</p>
+                    </div>
+                  </div>
+                  <div class="s-12 l-10">
+                    <div class="news-text">
+                      <h4>First latest News</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                    </div>
+                  </div>   
+                </div> 
+                <div class="s-12 m-6 l-6">
+                  <div class="s-12 l-2">
+                    <div class="news-date">
+                      <p class="day">12</p><p class="month">JULY</p><p class="year">2015</p>
+                    </div>
+                  </div>
+                  <div class="s-12 l-10">
+                    <div class="news-text">
+                      <h4>Second latest News</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                    </div>
+                  </div>   
+                </div>  
+              </div>
+            </div>
+         </div> 
+         <br>
+         <!-- CONTACT -->
+         <div id="contact">
+            <div class="line">
+               <h2 class="section-title">Contact Us</h2>
+               <div class="margin">
+                  <div class="s-12 m-12 l-3 hide-m hide-s margin-bottom right-align">
+                    <img src="img/contact.jpg" alt="">
+                  </div>
+                  <div class="s-12 m-12 l-4 margin-bottom right-align">
+                     <h3>Vision Design - graphic zoo</h3>
+                     <address>
+                        <p><strong>Adress:</strong>#301, 1210, 100 feet Road,Indiranagar,Bangalore 560008 </p>
+                        <p><strong>Country:</strong>India</p>
+                        <p><strong>E-mail:</strong> sakshi.tayal2015@vit.ac.in</p>
+                     </address>
+                     <br />
+                     <h3>Social</h3>
+                     <p><i class="icon-facebook icon"></i> <a href="https://www.facebook.com/pages/Vision-Design-graphic-ZOO/154664684553091">Second Opinion</a></p>
+                     <p><i class="icon-facebook icon"></i> <a href="https://www.facebook.com/myresponsee">Responsee</a></p>
+                     <p class="margin-bottom"><i class="icon-twitter icon"></i> <a href="https://twitter.com/MyResponsee">Responsee</a></p>
+                  </div>
+                  <div class="s-12 m-12 l-5">
+                    <h3>Write to us about anything and we will get back to you</h3>
+                    <form class="customform" method="post" action="../php7/complain.php">
+                      <div class="s-12"><input name="mail" placeholder="Your e-mail" title="Your e-mail" type="text" /></div>
+                      <div class="s-12"><input name="name" placeholder="Your name" title="Your name" type="text" /></div>
+                      <div class="s-12"><textarea placeholder="Your message" name="message" rows="5"></textarea></div>
+                      <div class="s-12 m-12 l-4"><button class="color-btn" type="submit">Submit Button</button></div>
+                    </form>
+                  </div>                
+               </div>
+            </div>
+         </div>
+         
+      </section>
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function($) {
+            var theme_slider = $("#owl-demo");
+            $("#owl-demo").owlCarousel({
+                navigation: false,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                autoPlay: 6000,
+                addClassActive: true,
+             // transitionStyle: "fade",
+                singleItem: true
+            });
+            $("#owl-demo2").owlCarousel({
+                slideSpeed: 300,
+                autoPlay: true,
+                navigation: true,
+                navigationText: ["&#xf007","&#xf006"],
+                pagination: false,
+                singleItem: true
+            });
+        
+            // Custom Navigation Events
+            $(".next-arrow").click(function() {
+                theme_slider.trigger('owl.next');
+            })
+            $(".prev-arrow").click(function() {
+                theme_slider.trigger('owl.prev');
+            })     
+        }); 
+      </script>
+   </body>
+</html>
